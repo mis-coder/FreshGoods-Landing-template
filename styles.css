@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* header styling */
+header {
+  background: rgb(204, 129, 69) url("images/cover-page.jpg");
+  background-size: cover;
+  height: 80vh;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 6rem;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+header h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 2rem;
+}
+
+button {
+  border: none;
+  background-color: rgb(255, 208, 0);
+  color: black;
+  text-transform: uppercase;
+  border-radius: 0.3rem;
+  padding: 0.8rem 1.6rem;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 196, 0);
+}
+
+/* main styling */
+/* container-1 styling */
+.container-1 {
+  margin: 8rem auto;
+}
+.benefits-title {
+  text-align: center;
+  padding: 3rem 2rem 3rem 2rem;
+}
+
+.benefits-title h4 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.benefits-title p {
+  font-size: 1.3rem;
+}
+
+.benefits-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2.5rem;
+  padding: 0 5rem;
+  margin: 0 10rem;
+}
+
+.benefits-card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits-card-item h5 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.benefits-card-item p {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+/* container-2 styling */
+.container-2 {
+  background: rgb(14, 14, 14) url("images/black-background.jpg");
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.what-says-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.fa-quote-left {
+  font-size: 3.5rem;
+  color: rgb(255, 230, 0);
+}
+
+.testimonial {
+  font-size: 1.8rem;
+  font-style: italic;
+  text-align: center;
+}
+.customer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.customer img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.customer p {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.rating {
+  margin-top: 0.5rem;
+}
+.rating span {
+  color: rgb(255, 230, 0);
+}
+
+/* container-3 styling */
+.container-3 {
+  margin: 8rem auto;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.features-grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.features-grid-item p {
+  text-align: center;
+  font-size: 1.5rem;
+  width: 70%;
+}
+
+.features-grid-item p:first-of-type {
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  margin: 1rem auto 0 auto;
+}
+
+/* container-4 styling */
+.container-4 {
+  margin: 8rem auto;
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.info-grid-item:last-child h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+}
+
+.info-grid-item:last-child p {
+  font-size: 1.6rem;
+}
+
+/* container-5 styling */
+.container-5 {
+  margin: 8rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #e5e5e5;
+  padding: 8rem;
+}
+
+.container-5 div {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container-5 h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.container-5 p {
+  font-size: 1.5rem;
+}
+
+/* footer styling */
+footer {
+  width: 100%;
+  height: 8rem;
+  background: rgb(42, 42, 42);
+  color: #fff;
+  margin-top: -2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  font-size: 1.5rem;
+}
+
+/* media queries */
+
+@media screen and (max-width: 800px) {
+  .benefits-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features-grid-item p:last-of-type {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .benefits-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+
+  .features-grid-item {
+    margin-bottom: 2rem;
+  }
+
+  .features-grid-item p:last-of-type {
+    font-size: 1.3rem;
+  }
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    padding-left: 1rem;
+  }
+  header h2 {
+    font-size: 1.5rem;
+  }
+  header h1 {
+    font-size: 3rem;
+  }
+  header p {
+    font-size: 1.3rem;
+  }
+
+  .benefits-cards-grid {
+    padding: 0 1rem;
+    margin: 0 2rem;
+  }
+
+  .info-grid-item img {
+    height: 25rem;
+    width: 20rem;
+  }
+  .info-grid-item:last-child h1 {
+    font-size: 1.8rem;
+  }
+  .info-grid-item:last-child p {
+    font-size: 1.5rem;
+  }
+
+  .container-5 div {
+    width: 80vw;
+  }
+  .container-5 h1 {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+  }
+  .container-5 p {
+    font-size: 1.2rem;
+  }
+  footer {
+    font-size: 1.3rem;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
